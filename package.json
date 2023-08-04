@@ -34,5 +34,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "packageManager": "yarn@3.6.1",
+  "devDependencies": {
+    "eslint": "latest",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-react": "latest"
   }
 }
