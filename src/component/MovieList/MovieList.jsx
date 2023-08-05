@@ -1,4 +1,4 @@
-import MovieListItem from '../component/MovieListItem';
+import MovieListItem from './MovieListItem';
 import React, { useState, useEffect } from 'react';
 // import { dummy } from '../dummy';
 

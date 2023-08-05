@@ -1,11 +1,12 @@
 /** @jsxImportSource @emotion/react */
 // import Weather from './page/Weather';
 import { css, Global } from '@emotion/react';
-import { spacing } from './@style/ui';
-import * as color from './@style/color';
-import * as screen from './@style/media-query';
+import { spacing } from './style/ui';
+import * as color from './style/color';
+import * as screen from './style/media-query';
 
-import MovieList from './page/MovieList';
+import MovieList from './component/MovieList/MovieList';
+import Main from './page/Main';
 
 const reset = () => {
     // 객체형으로 전달
@@ -37,6 +38,7 @@ const App = () => {
             <Global styles={reset} />
             {/* <createGlobalStyle /> */}
             <header className="App-header" />
+            <Main />
             <div css={wrap}>1234</div>
             <div css={wrap}>1234</div>
             <div css={wrap}>1234</div>
