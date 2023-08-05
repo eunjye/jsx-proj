@@ -1,6 +1,6 @@
-import { css } from "@emotion/react";
+import { css } from '@emotion/react';
 
-const unit = 4
+const unit = 4;
 
 export const spacing = {
   mgt: (value) => css`
