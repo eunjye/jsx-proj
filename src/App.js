@@ -11,6 +11,28 @@ import MovieList from './component/MovieList/MovieList';
 import NavbarLayout from './component/Layout/NavbarLayout';
 import DefaultLayout from './component/Layout/DefaultLayout';
 import GlobalStyle from './style/GlobalStyle';
+import Cart from './page/Cart';
+
+const App = () => {
+  return (
+    <div>
+      <GlobalStyle />
+      <BrowserRouter>
+        <NavbarLayout />
+        <Routes>
+          <Route element={<DefaultLayout />}>
+            <Route path="/" element={<Main />} />
+            <Route path="/movie" element={<MovieList />} />
+            <Route path="/cart" element={<Cart />} />
+          </Route>
+          <Route element={<NavbarLayout />} path="doublenav">
+            <Route path="weather/:locationId" element={<Weather />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
+};
 
 // const reset = () => {
 //   // 객체형으로 전달
@@ -35,25 +57,5 @@ import GlobalStyle from './style/GlobalStyle';
 //     }
 //   `;
 // };
-
-const App = () => {
-  return (
-    <div>
-      <GlobalStyle />
-      <BrowserRouter>
-        <NavbarLayout />
-        <Routes>
-          <Route element={<DefaultLayout />}>
-            <Route path="/" element={<Main />} />
-            <Route path="/movie" element={<MovieList />} />
-          </Route>
-          <Route element={<NavbarLayout />} path="doublenav">
-            <Route path="weather/:locationId" element={<Weather />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
-  );
-};
 
 export default App;

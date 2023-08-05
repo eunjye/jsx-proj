@@ -1,23 +1,29 @@
+/** @jsxImportSource @emotion/react */
 import React from 'react';
-// import { dummy } from '../model/dummy';
-// import ProductCard from '../component/ProductCard/ProductCard';
-import Cart from './Cart';
+import { dummy } from '../model/dummy';
+import ProductCard from '../component/ProductCard/ProductCard';
+import { css } from '@emotion/react';
 
+const arrResult = dummy.results;
+const cssBoxItem = () => {
+  return css({
+    border: '1px solid #444',
+    padding: '20px',
+    margin: '10px',
+  });
+};
 const Main = () => {
   return (
-    <>
-      {' '}
-      {
-        <Cart />
-        // dummy.results.map((item) => {
-        //   return (
-        //     <li key={item.id}>
-        //       <ProductCard data={item} />
-        //     </li>
-        //   );
-        // })
-      }
-    </>
+    <ul>
+      {!!arrResult &&
+        arrResult.map((item) => {
+          return (
+            <li key={item.id} css={cssBoxItem}>
+              <ProductCard data={item} />
+            </li>
+          );
+        })}
+    </ul>
   );
 };
 
