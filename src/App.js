@@ -1,9 +1,9 @@
 /** @jsxImportSource @emotion/react */
 // import Weather from './page/Weather';
 import { css, Global } from '@emotion/react';
-import { spacing } from './style/ui';
-import * as color from './style/color';
-import * as screen from './style/media-query';
+import { spacing } from './@style/ui';
+import * as color from './@style/color';
+import * as screen from './@style/media-query';
 
 import MovieList from './page/MovieList';
 
