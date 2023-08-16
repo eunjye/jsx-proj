@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import React from 'react';
 import { useRecoilState } from 'recoil';
-import { CartItemAtom } from '../../recoil/CartItemAtom';
+import { CartItemAtom } from '../../recoil/atom/CartItemAtom';
 import { css } from '@emotion/react';
 import CustomButton from '../atom/CustomButton';
 

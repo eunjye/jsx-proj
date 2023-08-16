@@ -1,7 +1,7 @@
 import React from 'react';
 import CustomButton from '../atom/CustomButton';
 import { useSetRecoilState } from 'recoil';
-import { CartItemAtom } from '../../recoil/CartItemAtom';
+import { CartItemAtom } from '../../recoil/atom/CartItemAtom';
 
 
 const CartItem = ({ data }) => {

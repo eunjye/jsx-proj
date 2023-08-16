@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRecoilValue } from 'recoil';
-import { AverageScoreSelector, CartItemAtom, TotalQuantitySelector } from '../recoil/CartItemAtom';
+import { AverageScoreSelector, CartItemAtom, TotalQuantitySelector } from '../recoil/atom/CartItemAtom';
 import CartItem from '../component/CartItem/CartItem';
 
 const Cart = () => {
